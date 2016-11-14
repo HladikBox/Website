@@ -19,6 +19,17 @@ nytprof.out
 *.bs
 /_eumm/
 *.suo
+logs/
+templates_c/
+upload/
 packages/
 obj/
 bin/
+
+
+/attachment
+/cache
+/config
+access_token.json
+jsapi_ticket.json
+/.vs/config/applicationhost.config
