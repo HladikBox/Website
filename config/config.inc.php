@@ -3,7 +3,7 @@
 //$CONFIG['charset']		= 'utf-8'; 
 $CONFIG['URL']="http://www.app-link.org";
 $CONFIG["SessionName"]="AppLinkWWW";
-$CONFIG["Title"]="APP超连接";
+$CONFIG["Title"]="链结";
 
 $CONFIG['smarty']['rootpath']		= '/'; 
 $CONFIG['solution_configuration']='debug';
