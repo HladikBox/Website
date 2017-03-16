@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="cn">
 	<head>
 		<meta charset="utf-8">
@@ -15,7 +15,11 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet">	
 		<link rel="stylesheet" type="text/css" href="ccss/easy-pie-chart.css">
-        
+        <script>
+            function openConsole() {
+                window.open('http://console.app-link.org');
+            }
+        </script>
 	<body data-spy="scroll" data-target=".nav-top" data-offset="90">		
 		<!-- navbar
 		=======================================-->
@@ -67,11 +71,12 @@
 									<li><a class="scroll" href="#pricing">应用市场</a></li>
 									<li><a class="scroll" href="#blog">开发文档</a></li>
 									<li><a class="scroll" href="#contact">联系我们</a></li>
-									<div class="btn-group" style="margin: 10px 0 0 20px;  float:right;">
-							<button type="button"  onclick="window.location.href='http://console.helpfooter.com'"  class="btn btn-default">控制台</button>			
-							</div>
-							
+                                    <li><a target="_blank" href="http://ask.app-link.org">讨论圈</a></li>
+                                    <li><a target="_blank" href="http://wiki.app-link.org">知识库</a></li>
 								</ul>
+                                <div class="btn-group" style="margin: 10px 0 0 20px;  float:right;">
+                                    <button type="button" onclick="openConsole();" class="btn btn-default">控制台</button>
+                                </div>
 							</div>
 						</div>
 					</nav>
@@ -133,7 +138,7 @@
 					<div class="col-sm-4 feature-bg p-0">
                         <div class="feature-item">
                             <h3><span><i class="lnr lnr-clock"></i></span>移动应用开发</h3>
-                            <p>接入AppLink，让你更快速的搭建移动应用，支持各种数据接口。</p>
+                            <p>自动化部署数据中心服务，让你的APP直接获取数据直接进行开发</p>
                             <a class="btn btn-default" href="#" role="button">了解更多</a>
                         </div>
 					</div>
