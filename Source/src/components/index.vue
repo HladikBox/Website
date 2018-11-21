@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div id="Images" class="stage">
-              <div class="figure  undefined active" :class='{active:item.selected=="Y",hide:item.selected!="Y"}' v-for="(item,index) in tiaozhan" >
+              <div class="figure  undefined " :class='{active:item.selected=="Y",hide:item.selected!="Y"}' v-for="(item,index) in tiaozhan" >
                 <img :src="uploadpath+'photo/'+item.img" ></div>
             </div>
         </div>
