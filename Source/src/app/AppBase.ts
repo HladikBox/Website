@@ -29,6 +29,8 @@ export class AppBase implements OnInit {
 
     public statusBarStyle = "X";//{DARK}
     public uploadpath: string = ApiConfig.getUploadPath();
+    public documentpath:string = ApiConfig.documentlink();
+    public consolepath:string = ApiConfig.consolelink();
     public util = AppUtil;
     public static Resources = null;
     public res = null;
