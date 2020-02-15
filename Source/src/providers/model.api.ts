@@ -2,15 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ApiConfig } from '../app/api.config'
 @Injectable()
-export class ExampleApi {
+export class ModelApi {
 
     constructor(public http: HttpClient) {
 
     }
 
 
-    public hello(data, showLoadingModal: boolean = true) {
-        var url = ApiConfig.getApiUrl() + 'example/hello';
+    public update(data, showLoadingModal: boolean = true) {
+        var url = ApiConfig.getApiUrl() + 'model/update';
         var headers = ApiConfig.GetHeader(url, data);
         let options = { headers: headers };
         let body = ApiConfig.ParamUrlencoded(data);
@@ -26,7 +26,7 @@ export class ExampleApi {
             })
             .catch(err => {
                 console.error(err);
-                return ApiConfig.ErrorHandle('example/hello', data, err);
+                return ApiConfig.ErrorHandle('model/update', data, err);
             });
     }
 
