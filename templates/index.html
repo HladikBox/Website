@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{$InstInfo.name}}</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="/js/vendors/jquery.min.js"></script>
+    <script src="/js/vendors/slick.min.js"></script>
+    <script src="/js/vendors/lodash.min.js"></script>
+    <script src="/js/vendors/forms2.min.js"></script>
+    <script src="/js/vendors/rangeslider.min.js"></script>
+    <script src="/js/vendors/jquery.waypoints.min.js"></script>
+    <script src="/js/vendors/bootstrap.min.js"></script>
+    <script src="/js/vendors/bootstrap-select.min.js"></script>
+    <script src="/js/vendors/script.js"></script>
+    <style data-href="/styles.7bef7f82c11910d01bf1.css">
+        {{include  file="$smarty_root/index.css" }}
+    </style>
+</head>
+
+<body>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <div class="main-wrapper">
+                <div>
+                    <header id="header">
+                        <div class="notification-bar">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-8  notification-tab">
+                                        
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 display-none-tab d-lg-block text-right">
+                                        <div class="top-nav-right">
+                                            <ul class="top-nav-menu">
+                                                <li><a href="{{$docurl}}/">文档</a></li>
+                                                <li><a href="{{$consoleurl}}/">登录</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-nav align-items-center justify-content-start">
+                            <nav class="navbar navbar-toggleable-md navbar-expand-lg">
+                                <div class="container"><a aria-current="page" class="navbar-brand" href="/"><img
+                                            alt="Contentstack logo" class="logo"
+                                            src="{{$uploadpath}}inst/{{$InstInfo.logo}}" /></a><button
+                                        class="navbar-toggler collapsed navResponsive" type="button"
+                                        data-toggle="collapse" data-target="#navbarResponsive"
+                                        aria-controls="navbarResponsive" aria-expanded="false"
+                                        aria-label="Toggle navigation"><span
+                                            class="navbar-toggler-icon"></span></button>
+                                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item dropdown active"><a class="nav-link">产品</a>
+                                                <ul class="dropdown-menu">
+                                                    <div></div>
+                                                    <li><a class="dropdown-item" href="/features">特征</a></li>
+                                                    <li><a class="dropdown-item" href="/developers-cms">技术人员</a></li>
+                                                    <li><a class="dropdown-item" href="/business-cms">商业拓展</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="/partners">合作伙伴</a></li>
+                                                    <li><a class="dropdown-item" href="/integrations">系统集成</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown active"><a class="nav-link">教程</a>
+                                                <ul class="dropdown-menu">
+                                                    <div > </div>
+                                                    <li><a class="dropdown-item" href="/resources">资源</a></li>
+                                                    <li><a class="dropdown-item" href="/blog">博客</a></li>
+                                                    <li><a class="dropdown-item" href="/cms-guides">使用向导</a></li>
+                                                    <li><a class="dropdown-item" href="{{$docurl}}">文档</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown active"><a class="nav-link">我们</a>
+                                                <ul class="dropdown-menu">
+                                                    <div ></div>
+                                                    <li><a class="dropdown-item" href="/about">关于我们</a></li>
+                                                    <li><a class="dropdown-item" href="/company/news">最新</a></li>
+                                                    <li><a class="dropdown-item" href="/company/press">新闻</a></li>
+                                                    <li><a class="dropdown-item" href="/company/careers">照片</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="/company/contact-us">联系我们</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown active"><a class="nav-link">价格</a>
+                                                <ul class="dropdown-menu">
+                                                    <div></div>
+                                                    <li><a class="dropdown-item" href="/pricing">定价计划</a></li>
+                                                    <li><a class="dropdown-item" href="/roi-calculator">ROI计算器</a></li>
+                                                </ul>
+                                            </li>
+                                            <div class="try-free button display-none-tab "><a
+                                                    href="/company/contact-us?subject=free%20trial">免费试用</a>
+                                            </div>
+                                        </ul>
+                                        <div
+                                            class="col-lg-4 col-md-4 d-lg-none display-block-tab text-right doc-login-tab">
+                                            <div class="top-nav-right">
+                                                <ul class="top-nav-menu">
+                                                    <li><a href="{{$docurl}}">文档</a></li>
+                                                    <li><a href="{{$consoleurl}}">登录</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </header>
+                    <div class="overlay"></div>
+                    <section class="hero-banner-section home-banner">
+                        <div class="bg-image">
+                            <div class="slide1 banner-img"
+                                style="background-image:url({{$uploadpath}}pgindex/{{$info.bg}})">
+                            </div>
+                            <div class="slide2 banner-img"
+                                style="background-image:url({{$uploadpath}}pgindex/{{$info.bg2}})">
+                            </div>
+                            <div class="slide3 banner-img"
+                                style="background-image:url({{$uploadpath}}pgindex/{{$info.bg3}})">
+                            </div>
+                        </div>
+                        <div class="banner-details">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 pl-0 pr-0">
+                                        <div class="banner-content">
+                                            <h1>{{$info.title}}</h1>
+                                            <p>{{$info.summary}}</p>
+                                            <div>
+                                                <div class="try-free button"><a
+                                                        href="/company/contact-us?subject=free%20trial">免费体验</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="request-demo button"><a
+                                                        href="/company/contact-us?subject=get%20a%20demo">请求演示</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="company-logo-section">
+                        <div class="container">
+                            <div class="slick-slider slick-initialized" dir="ltr"><button type="button" data-role="none"
+                                    class="slick-arrow slick-prev" style="display:block">
+                                    <!-- -->Previous</button>
+                                <div class="slick-list">
+                                    <div class="slick-track" style="width:833.3333333333334%;left:-100%">
+                                        {{foreach from=$friendlist item=friend}}
+                                        <div data-index="{{$friend.seq}}" class="slick-slide slick-active slick-current" tabindex="-1"
+                                            aria-hidden="false" style="outline:none;width:2%">
+                                            <div><img alt="{{friend.name}}"
+                                                    src="{{$uploadpath}}pgindex/{{$friend.logo}}"
+                                                    tabindex="-1" style="width:100%;display:inline-block" /></div>
+                                        </div>
+                                        {{/foreach}}
+                                    </div>
+                                </div><button type="button" data-role="none" class="slick-arrow slick-next"
+                                    style="display:block">
+                                    <!-- -->Next</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="main-content-section">
+                        <div class="feature-section">
+                            <div class="feature-content">
+                                <div class="title">
+                                    <h2>为什么选择云易创？</h2>
+                                </div>
+                            </div>
+                            <div class="card-section">
+                                <div class="container">
+                                    <div class="row card-list-row">
+                                        <div class="card-details purple-bg col-md-4 col-sm-12 col-xs-12">
+                                            <h3>{{$info.whyus1title}}</h3>
+                                            <p>{{$info.whyus1summary}}</p>
+                                            <div class="box-icon box-small-icon"></div>
+                                        </div>
+                                        <div class="card-details violet-bg col-md-4 col-sm-12 col-xs-12">
+                                            <h3>{{$info.whyus2title}}</h3>
+                                            <p>{{$info.whyus2summary}}</p>
+                                            <div class="box-icon box-small-icon"></div>
+                                        </div>
+                                        <div class="card-details blue-bg col-md-4 col-sm-12 col-xs-12">
+                                            <h3>{{$info.whyus3title}}</h3>
+                                            <p>{{$info.whyus3summary}}</p>
+                                            <div class="box-icon box-small-icon"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business-section">
+                            <div class="person-images"><span class="man person-img"></span><span
+                                    class="woman person-img"></span><span class="man two person-img"></span></div>
+                            <div class="business-details">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 tech-bus-content">
+                                            <div
+                                                class="col-md-6 col-xs-12 full-height tec-sec pad-top-bottom float-md-left">
+                                                <div
+                                                    class=" col-lg-12 col-xs-12  tech-details reverse float-none float-md-left">
+                                                    <div class=" col-xs-12 sec-xs-woman"></div>
+                                                    <div class="content">
+                                                        <h2>对IT和开发人员</h2>
+                                                        <p>{{$info.forit}}</p>
+                                                        <div class="learn-more button learn-purple"><a
+                                                                href="/developers-cms">更多</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-md-6 col-xs-12 full-height buss-sec pad-top-bottom float-md-right">
+                                                <div
+                                                    class="col-lg-12 col-xs-12 tech-details  float-none float-md-right text-md-right">
+                                                    <div class=" col-xs-12 sec-xs-man"></div>
+                                                    <div class="content">
+                                                        <h2>对业务和市场</h2>
+                                                        <p>{{$info.forbusiness}}</p>
+                                                        <div class="learn-more button learn-blue"><a
+                                                                href="/business-cms">更多</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-section-wrap pad-top-bottom">
+                            <div class="tab-features">
+                                <div class="container">
+                                    <div class="row">
+                                        <nav>
+                                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                                    {{foreach from=$indexfeature item=feature  key=k}}
+                                                    <a class="nav-item nav-link features-nav {{if $k==0}}active{{/if}}" id="nav-{{$feature.id}}-tab"
+                                                    data-toggle="tab" href="#nav-{{$feature.id}}" role="tab"
+                                                    aria-controls="nav-{{$feature.id}}" aria-selected="true">{{$feature.name}}</a>
+                                                    {{/foreach}}
+                                                <li><a class="more" href="/features/">更多特征</a></li>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content col-md-12" id="nav-tabContent">
+                                            {{foreach from=$indexfeature item=feature key=k}}
+                                            <div class="tab-pane show {{if $k==0}}active{{/if}}" id="nav-{{$feature.id}}" role="tabpanel"
+                                                aria-labelledby="nav-{{$feature.id}}-tab">
+                                                <div class="tab-feature-row">
+                                                    <div class="col-md-5 col-xl-5 tab-features-content">
+                                                        <h2>{{$feature.name}}</h2>
+                                                        <p>{{$feature.summary}}</p>
+                                                    </div>
+                                                    <div class="col-md-6 col-xl-6 tab-features-image"><img
+                                                            alt="workflow"
+                                                            src="{{$uploadpath}}pgindex/{{$feature.img}}" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {{/foreach}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefits-section pad-top-bottom">
+                            <div class="benefits">
+                                <div class="container">
+                                    <h2 class="text-center d-sm-none benefit-title">云易创的优势</h2>
+                                    <div class="row">
+                                        <div class="col-md-4 left_section">
+                                            <div class="tryIt"><span>试试</span><i class="try-icon"></i></div>
+                                            <ul class="slide-up">
+                                                <li class="active"></li>
+                                                {{foreach from=$indexgood item=good key=k}}
+                                                <li data-title="{{$good.name}}"
+                                                    data-desc="{{$good.summary}}">
+                                                    <h4>{{$good.name}}</h4>
+                                                    <div class="form">
+                                                        <div class="form-top"><img alt=""
+                                                                src="{{$uploadpath}}inst/{{$InstInfo.logo}}" />
+                                                        </div>
+                                                        <form class="playground clearfix">
+                                                            <div class="form-contents">
+                                                                <div class="form-title"><label>标题</label><input
+                                                                        type="text" class="form-title-input"
+                                                                        autoComplete="off" name="title"
+                                                                        value="{{$good.name}}" /></div>
+                                                                <div class="form-description">
+                                                                    <label>简介</label><textarea type="text"
+                                                                        class="form-desc"
+                                                                        name="description">{{$good.summary}}</textarea>
+                                                                </div>
+                                                                <div class="form-file clearfix">
+                                                                    <div id="image"><img alt=""
+                                                                            src="/imgs/connected-digital-devices.png?format=png8&amp;auto=webp" />
+                                                                    </div>
+                                                                    <div class="edit-section"><span
+                                                                            class="image-title">connected-digi.jpeg<em>144.1
+                                                                                kb</em></span><span
+                                                                            class="close-icon">x</span><span
+                                                                            class="edit-icon"></span></div>
+                                                                </div><button type="submit" class="submitBtn"><i
+                                                                        class="globe-icon"></i>发布</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                {{/foreach}}
+                                            </ul>
+                                        </div>
+                                        <div class="benefitMOdal-box"><span class="title"> 选择背景图
+                                            </span>
+                                            <div>
+                                                <ul>
+                                                    <li class="active"><img alt="" class="image"
+                                                            src="/imgs/connected-digital-devices.png?format=png8&amp;auto=webp" />
+                                                    </li>
+                                                    <li><img alt="" class="image"
+                                                            src="/imgs/track-cross-country-running-althete.jpeg?format=pjpg&amp;auto=webp" />
+                                                    </li>
+                                                    <li><img alt="" class="image"
+                                                            src="/imgs/girl-retail-shopping.jpg?format=pjpg&amp;auto=webp" />
+                                                    </li>
+                                                    <li><img alt="" class="image"
+                                                            src="/imgs/playstation-game-controller.jpeg?format=pjpg&amp;auto=webp" />
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="button confirm-btn"><span>确认</span></div>
+                                            <div class="button cancel-btn"><span>取消</span></div>
+                                        </div>
+                                        <div class="col-md-8 right_section">
+                                            <div class="divice-icon">
+                                                <ul class="clearfix">
+                                                    <li><img src="/imgs/desktop-icon.png?format=png8&amp;auto=webp"
+                                                            alt="" /></li>
+                                                    <li><img src="/imgs/mobile-icon.png?format=png8&amp;auto=webp"
+                                                            alt="" /></li>
+                                                    <li><img src="/imgs/smart-home-icon.png?format=png8&amp;auto=webp"
+                                                            alt="" /></li>
+                                                    <li><img src="/imgs/vr-icon.png?format=png8&amp;auto=webp"
+                                                            alt="" /></li>
+                                                    <li><img src="/imgs/smartwatch-icon.png?format=png8&amp;auto=webp"
+                                                            alt="" /></li>
+                                                </ul>
+                                            </div>
+                                            <div class="publish-sec">
+                                                <div class="display display-desktop">
+                                                    <div class="head-top"><img alt=""
+                                                            src="{{$uploadpath}}inst/{{$InstInfo.logo}}" />
+                                                    </div>
+                                                    <div class="detail-sec">
+                                                        <div class="content"><span class="title">Omnichannel
+                                                                Delivery</span><span class="description">Enable your
+                                                                brands to deliver an integrated and continuous digital
+                                                                experience across all touchpoints and devices. </span>
+                                                        </div><img alt="" class="image"
+                                                            src="/imgs/connected-digital-devices.png?format=png8&amp;auto=webp" />
+                                                    </div>
+                                                </div>
+                                                <div class="display display-tablet">
+                                                    <div class="head-top"><img alt=""
+                                                            src="{{$uploadpath}}inst/{{$InstInfo.logo}}" />
+                                                    </div>
+                                                    <div class="detail-sec">
+                                                        <div class="content"><span class="title">Omnichannel
+                                                                Delivery</span><span class="description">Enable your
+                                                                brands to deliver an integrated and continuous digital
+                                                                experience across all touchpoints and devices. </span>
+                                                        </div><img alt="" class="image"
+                                                            src="/imgs/connected-digital-devices.png?format=png8&amp;auto=webp" />
+                                                    </div>
+                                                </div>
+                                                <div class="display display-mobile">
+                                                    <div class="head-top"><img alt=""
+                                                            src="{{$uploadpath}}inst/{{$InstInfo.logo}}" />
+                                                    </div>
+                                                    <div class="detail-sec">
+                                                        <div class="content"><span class="title">Omnichannel
+                                                                Delivery</span><span class="description">Enable your
+                                                                brands to deliver an integrated and continuous digital
+                                                                experience across all touchpoints and devices. </span>
+                                                        </div><img alt="" class="image"
+                                                            src="/imgs/connected-digital-devices.png?format=png8&amp;auto=webp" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-sec pad-top-bottom">
+                            <div class="row m-0">
+                                <div class="tetimonial-slider col-md-12 p-0">
+                                    <div class="container">
+                                        <div class="col-lg-5 col-md-12 float-left">
+                                            <div class="testimonial-content">
+                                                <h2>You’re in Good Company</h2>
+                                                <p>Discover the many ways Contentstack has helped its customers speed up
+                                                    omnichannel development and deployment.</p>
+                                                <div class="button float-none float-lg-right mt-5"><a class="see-case"
+                                                        href="/resources?filter=Case%20Study">See Case Studies</a></div>
+                                            </div>
+                                        </div>
+                                        <div id="slider" class="  testimonalslide col-md-12 col-lg-6 float-right">
+                                            <div class="overflow-hidden">
+                                                <div class="digno"></div>
+                                            </div>
+                                            <div class="slides slider-for">
+                                                <div class="slick-slider slick-initialized" dir="ltr">
+                                                    <div class="slick-list">
+                                                        <div class="slick-track" style="width:1100%;left:-100%">
+                                                            <div data-index="0"
+                                                                class="slick-slide slick-active slick-current"
+                                                                tabindex="-1" aria-hidden="false"
+                                                                style="outline:none;width:9.090909090909092%;position:relative;left:0;opacity:1;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease">
+                                                                <div>
+                                                                    <div tabindex="-1"
+                                                                        style="width:100%;display:inline-block"><span
+                                                                            class="qoute-icon"><img alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt3d3c33c5e3facb76/5d664e5d21416077ce1ae3f2/quote-icon.png?format=png8&amp;auto=webp" /></span>
+                                                                        <div class="content">
+                                                                            <div
+                                                                                class="name-designation d-none xs-name-desig">
+                                                                                <span class="name">Hallur Þór
+                                                                                    Halldórsson</span><span
+                                                                                    class="designation">UX Writer and
+                                                                                    Content Designer, Icelandair</span>
+                                                                            </div><span class="testimonal-logo"> <img
+                                                                                    src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt78a40030b0c47299/5d31ab7013451f2b027b4a39/icelandair.png?format=png8&amp;auto=webp"
+                                                                                    alt="logo-1" /> </span>
+                                                                            <p class="">With Contentstack, the
+                                                                                Icelandair content team is able to
+                                                                                publish content with a much higher
+                                                                                frequency than ever before and we’ve cut
+                                                                                the time it takes to push out promotions
+                                                                                by over 90 percent!</p>
+                                                                            <div
+                                                                                class="name-designation visible-xs-none">
+                                                                                <span class="name">Hallur Þór
+                                                                                    Halldórsson</span><span
+                                                                                    class="designation">UX Writer and
+                                                                                    Content Designer, Icelandair</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-index="1" class="slick-slide" tabindex="-1"
+                                                                aria-hidden="true"
+                                                                style="outline:none;width:9.090909090909092%;position:relative;left:-9px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease">
+                                                                <div>
+                                                                    <div tabindex="-1"
+                                                                        style="width:100%;display:inline-block"><span
+                                                                            class="qoute-icon"><img alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt3d3c33c5e3facb76/5d664e5d21416077ce1ae3f2/quote-icon.png?format=png8&amp;auto=webp" /></span>
+                                                                        <div class="content">
+                                                                            <div
+                                                                                class="name-designation d-none xs-name-desig">
+                                                                                <span class="name">Auden
+                                                                                    Hinton</span><span
+                                                                                    class="designation">Sr. Manager, Web
+                                                                                    Services, Ellie Mae</span></div>
+                                                                            <span class="testimonal-logo"> <img
+                                                                                    src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt8bdce241b05aa007/5d3fe7ba7aa78925d4429e0a/ellie-mae.png?format=png8&amp;auto=webp"
+                                                                                    alt="logo-1" /> </span>
+                                                                            <p class="">Contentstack isn&#x27;t just a
+                                                                                CMS of today. It&#x27;s the CMS of the
+                                                                                future. I don&#x27;t know how we
+                                                                                operated without Contentstack.</p>
+                                                                            <div
+                                                                                class="name-designation visible-xs-none">
+                                                                                <span class="name">Auden
+                                                                                    Hinton</span><span
+                                                                                    class="designation">Sr. Manager, Web
+                                                                                    Services, Ellie Mae</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-index="2" class="slick-slide" tabindex="-1"
+                                                                aria-hidden="true"
+                                                                style="outline:none;width:9.090909090909092%;position:relative;left:-18px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease">
+                                                                <div>
+                                                                    <div tabindex="-1"
+                                                                        style="width:100%;display:inline-block"><span
+                                                                            class="qoute-icon"><img alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt3d3c33c5e3facb76/5d664e5d21416077ce1ae3f2/quote-icon.png?format=png8&amp;auto=webp" /></span>
+                                                                        <div class="content">
+                                                                            <div
+                                                                                class="name-designation d-none xs-name-desig">
+                                                                                <span class="name">Peter
+                                                                                    Gorman</span><span
+                                                                                    class="designation">Global VP of
+                                                                                    Product and Technology, Berlitz
+                                                                                    Corporation</span></div><span
+                                                                                class="testimonal-logo"> <img
+                                                                                    src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt16d4ec7a5f00448c/5d31a3a5a475eb6afdf8d386/berlitz-2.png?format=png8&amp;auto=webp"
+                                                                                    alt="logo-1" /> </span>
+                                                                            <p class="">By using Contentstack to build
+                                                                                API-first, mobile-friendly content
+                                                                                infrastructure, Berlitz saw total
+                                                                                revenue grow 40% YoY, lead conversions
+                                                                                increase by 126%, and pages that load
+                                                                                133% faster!</p>
+                                                                            <div
+                                                                                class="name-designation visible-xs-none">
+                                                                                <span class="name">Peter
+                                                                                    Gorman</span><span
+                                                                                    class="designation">Global VP of
+                                                                                    Product and Technology, Berlitz
+                                                                                    Corporation</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-index="3" class="slick-slide" tabindex="-1"
+                                                                aria-hidden="true"
+                                                                style="outline:none;width:9.090909090909092%;position:relative;left:-27px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease">
+                                                                <div>
+                                                                    <div tabindex="-1"
+                                                                        style="width:100%;display:inline-block"><span
+                                                                            class="qoute-icon"><img alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt3d3c33c5e3facb76/5d664e5d21416077ce1ae3f2/quote-icon.png?format=png8&amp;auto=webp" /></span>
+                                                                        <div class="content">
+                                                                            <div
+                                                                                class="name-designation d-none xs-name-desig">
+                                                                                <span class="name">Sylvie
+                                                                                    Shimizu</span><span
+                                                                                    class="designation">Webmaster,
+                                                                                    Elastic</span></div><span
+                                                                                class="testimonal-logo"> <img
+                                                                                    src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt8db965d388bc2327/5d42ada6b0a4c13e22988b8c/elastic-logo.png?format=png8&amp;auto=webp"
+                                                                                    alt="logo-1" /> </span>
+                                                                            <p class="">Before implementing
+                                                                                Contentstack, the simplest requests took
+                                                                                days and creating a new page took up to
+                                                                                a week to complete. Now, changes take
+                                                                                minutes and putting together a new page
+                                                                                can be done within the day – without the
+                                                                                help of a skilled developer!</p>
+                                                                            <div
+                                                                                class="name-designation visible-xs-none">
+                                                                                <span class="name">Sylvie
+                                                                                    Shimizu</span><span
+                                                                                    class="designation">Webmaster,
+                                                                                    Elastic</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-index="4" class="slick-slide" tabindex="-1"
+                                                                aria-hidden="true"
+                                                                style="outline:none;width:9.090909090909092%;position:relative;left:-36px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease">
+                                                                <div>
+                                                                    <div tabindex="-1"
+                                                                        style="width:100%;display:inline-block"><span
+                                                                            class="qoute-icon"><img alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt3d3c33c5e3facb76/5d664e5d21416077ce1ae3f2/quote-icon.png?format=png8&amp;auto=webp" /></span>
+                                                                        <div class="content">
+                                                                            <div
+                                                                                class="name-designation d-none xs-name-desig">
+                                                                                <span class="name">Taher
+                                                                                    Khaliq</span><span
+                                                                                    class="designation">Director of
+                                                                                    Ecommerce Platforms. Photobox</span>
+                                                                            </div><span class="testimonal-logo"> <img
+                                                                                    src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blted3f032b679fc9e8/5d31ab6ed63006154687f7f8/photobox.png?format=png8&amp;auto=webp"
+                                                                                    alt="logo-1" /> </span>
+                                                                            <p class="">Some of our e-commerce
+                                                                                requirements were quite unique and
+                                                                                advanced, but with Contentstack we were
+                                                                                able to implement a solution that worked
+                                                                                seamlessly around our platform and was
+                                                                                still easy to use.</p>
+                                                                            <div
+                                                                                class="name-designation visible-xs-none">
+                                                                                <span class="name">Taher
+                                                                                    Khaliq</span><span
+                                                                                    class="designation">Director of
+                                                                                    Ecommerce Platforms. Photobox</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="carousel" class="thumbnail col-md-12 float-right">
+                                        <div class="slides slider-nav">
+                                            <div class="container">
+                                                <div class=" col-xl-8 col-lg-10 col-md-12 mx-auto">
+                                                    <div class="slick-slider slick-initialized">
+                                                        <div class="slick-list">
+                                                            <div class="slick-track" style="width:100%;left:40%">
+                                                                <div data-index="0"
+                                                                    class="slick-slide slick-active slick-center slick-current"
+                                                                    tabindex="-1" aria-hidden="false"
+                                                                    style="outline:none;width:20%">
+                                                                    <div>
+                                                                        <div tabindex="-1"
+                                                                            style="width:100%;display:inline-block"><img
+                                                                                alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt78a40030b0c47299/5d31ab7013451f2b027b4a39/icelandair.png?format=png8&amp;auto=webp" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-index="1" class="slick-slide slick-active"
+                                                                    tabindex="-1" aria-hidden="false"
+                                                                    style="outline:none;width:20%">
+                                                                    <div>
+                                                                        <div tabindex="-1"
+                                                                            style="width:100%;display:inline-block"><img
+                                                                                alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt8bdce241b05aa007/5d3fe7ba7aa78925d4429e0a/ellie-mae.png?format=png8&amp;auto=webp" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-index="2" class="slick-slide slick-active"
+                                                                    tabindex="-1" aria-hidden="false"
+                                                                    style="outline:none;width:20%">
+                                                                    <div>
+                                                                        <div tabindex="-1"
+                                                                            style="width:100%;display:inline-block"><img
+                                                                                alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt16d4ec7a5f00448c/5d31a3a5a475eb6afdf8d386/berlitz-2.png?format=png8&amp;auto=webp" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-index="3" class="slick-slide" tabindex="-1"
+                                                                    aria-hidden="true" style="outline:none;width:20%">
+                                                                    <div>
+                                                                        <div tabindex="-1"
+                                                                            style="width:100%;display:inline-block"><img
+                                                                                alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt8db965d388bc2327/5d42ada6b0a4c13e22988b8c/elastic-logo.png?format=png8&amp;auto=webp" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-index="4" class="slick-slide" tabindex="-1"
+                                                                    aria-hidden="true" style="outline:none;width:20%">
+                                                                    <div>
+                                                                        <div tabindex="-1"
+                                                                            style="width:100%;display:inline-block"><img
+                                                                                alt=""
+                                                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blted3f032b679fc9e8/5d31ab6ed63006154687f7f8/photobox.png?format=png8&amp;auto=webp" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommended-section pad-top-bottom recom-homepage">
+                            <div class="title">
+                                <h2>Recommended Content Management Resources</h2>
+                            </div>
+                            <div class="recommended-wrap clearfix">
+                                <div class=" float-lg-left box-1 col-lg-7 col-md-12"><a class=""
+                                        href="/resources/eb/ultimate-guide-cms-comparison-architecture-vol-1">
+                                        <div class="card-wrap d-lg-flex">
+                                            <div class="col-lg-4 pl-0 pr-0 card-image"><img alt=""
+                                                    src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt8e4500b820d3adf1/5d47b9415c5bf77f34eb717d/desktop-keyboard.jpeg?format=png8&amp;auto=webp" />
+                                            </div>
+                                            <div class="col-lg-7 card-content">
+                                                <div class="label">CMS Ebook</div>
+                                                <h3>The Ultimate Guide to CMS: CMS Comparison and Architectures</h3>
+                                                <div class="block-with-text">
+                                                    <p>This 3 volume ebook compares headless CMS, decoupled CMS, and
+                                                        traditional CMS, as well as CMS architectural differences.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                                <div class="float-lg-right box-2 col-lg-5 col-md-12"><a class=""
+                                        href="/resources/re/headless-cms-digital-experience-platform-gartner-report/">
+                                        <div class="card-wrap d-lg-flex image-wrap">
+                                            <div class="card-image"><img alt=""
+                                                    src="https://images.contentstack.io/v3/assets/blt77283b164776448a/bltb2f2cb684e83d85e/5d31a44d6f5acc1541a3483d/rec-cont-2.png?format=png8&amp;auto=webp" />
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="label">Gartner Report</div>
+                                                <h3>Headless Paves Way for Personalization</h3>
+                                            </div>
+                                            <div class="recommended-overlay"
+                                                style="background-image:linear-gradient(56deg, #571fbc, #a3346b)"></div>
+                                        </div>
+                                    </a></div>
+                                <div class="float-left box-3 col-md-12 col-sm-12"><a class="d-flex"
+                                        href="/blog/all-about-headless/10-tips-on-content-management-systems-cms">
+                                        <div class="card-wrap d-lg-flex">
+                                            <div class="col-lg-8 pl-0 pr-0 card-image"><img alt=""
+                                                    src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt4ba6dbfecdf538b4/5d47c2a9c9733b77a0484a37/new-york-times-square.jpeg?format=png8&amp;auto=webp" />
+                                            </div>
+                                            <div class="col-lg-4 card-content">
+                                                <div class="label">Blog</div>
+                                                <h3>10 Tips - How to Choose the Right Content Management System</h3>
+                                                <div class="block-with-text">
+                                                    <p>Read these comprehensive tips to guide you in your CMS research
+                                                        and to help you make the best choice for your team.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="tryforfree"
+                            style="background-image:url(https://images.contentstack.io/v3/assets/blt1264fa9b448be721/bltb6939b357fb70b33/5d08ba3196d2d1b65a981c69/download?format=png8&amp;auto=webp)">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="content col-md-12">
+                                        <div class="">
+                                            <h2 class="head-text">Try it to believe it</h2>
+                                            <div class="rounded-pill button"><a
+                                                    href="/company/contact-us?subject=get%20a%20demo">Request a Demo</a>
+                                            </div>
+                                            <div id="contact-global" class="contact-us-form text-left"
+                                                style="display:none">
+                                                <div class="features-demo-form">
+                                                    <form id="mktoForm_1035" class="demo-mkt-form"></form>
+                                                </div>
+                                            </div>
+                                            <div class="try-free-button"><a
+                                                    href="/company/contact-us?subject=free%20trial">Try for Free</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <footer class="footer-section">
+                        <div class="container layout-width">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="footer-wrap clearfix">
+                                        <div class="footer-logo"><a aria-current="page" class="" href="/"><img
+                                                    alt="contentstack logo"
+                                                    src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt16e497b934cdb8a0/5d31a45c68ae0b51522693cd/contentstack-footer-logo.png" /></a>
+                                        </div>
+                                        <div class="footer-link">
+                                            <ul class="footer-menu-wrap">
+                                                <li class="title"><a class="title inactiveLink">Product</a></li>
+                                                <ul class="sub-nav hide">
+                                                    <li><a href="/features">Features</a></li>
+                                                    <li><a href="/developers-cms">For IT &amp; Developers</a></li>
+                                                    <li><a href="/business-cms">For Business</a></li>
+                                                    <li><a href="/integrations">Integrations</a></li>
+                                                    <li><a href="/pricing">Pricing</a></li>
+                                                    <li><a href="/roi-calculator">ROI Calculator</a></li>
+                                                </ul>
+                                            </ul>
+                                            <ul class="footer-menu-wrap">
+                                                <li class="title"><a class="title inactiveLink">Users</a></li>
+                                                <ul class="sub-nav hide">
+                                                    <li><a href="https://www.contentstack.com/docs/platforms"
+                                                            target="_blank">Supported Platforms</a></li>
+                                                    <li><a href="/faqs">FAQs</a></li>
+                                                    <li><a href="/trust">Trust</a></li>
+                                                    <li><a href="https://status.contentstack.com/"
+                                                            target="_blank">System Status</a></li>
+                                                </ul>
+                                            </ul>
+                                            <ul class="footer-menu-wrap">
+                                                <li class="title"><a class="title inactiveLink">Education</a></li>
+                                                <ul class="sub-nav hide">
+                                                    <li><a href="/resources">Customer Resources</a></li>
+                                                    <li><a href="/cms-guides">CMS Guides</a></li>
+                                                    <li><a href="/blog">Blog</a></li>
+                                                    <li><a href="/docs" target="_blank">Docs</a></li>
+                                                </ul>
+                                            </ul>
+                                            <ul class="footer-menu-wrap">
+                                                <li class="title"><a class="title inactiveLink">Company</a></li>
+                                                <ul class="sub-nav hide">
+                                                    <li><a href="/about">About</a></li>
+                                                    <li><a href="/company/news">News</a></li>
+                                                    <li><a href="/company/press">Press</a></li>
+                                                    <li><a href="/company/careers">Careers</a></li>
+                                                    <li><a href="/partners">Become a Partner</a></li>
+                                                    <li><a href="/company/contact-us">Contact Us</a></li>
+                                                </ul>
+                                            </ul>
+                                            <ul class="footer-menu-wrap">
+                                                <li class="title"><a class="title inactiveLink">Social</a></li>
+                                                <ul class="sub-nav hide">
+                                                    <li><a href="https://twitter.com/contentstack"
+                                                            target="_blank">Twitter</a></li>
+                                                    <li><a href="https://www.linkedin.com/company/contentstack"
+                                                            target="_blank">Linkedin</a></li>
+                                                    <li><a href="https://www.facebook.com/contentstack"
+                                                            target="_blank">Facebook</a></li>
+                                                    <li><a href="https://www.youtube.com/contentstack"
+                                                            target="_blank">YouTube</a></li>
+                                                    <li><a href="https://github.com/contentstack"
+                                                            target="_blank">GitHub</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="legal-wrap">
+                                        <ul class="footer-links">
+                                            <li><a href="/privacy">Privacy</a></li>
+                                        </ul>
+                                        <ul class="footer-links">
+                                            <li><a href="/terms-of-service">Terms</a></li>
+                                        </ul>
+                                        <ul class="footer-links">
+                                            <li><a href="/sitemap">Sitemap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{{include  file="$smarty_root/chunkmapping.html" }}
+<script src="/js/webpack-runtime-index.js" async=""></script>
+<script src="/js/app-index.js" async=""></script>
+<script src="/js/commons-index.js" async=""></script>
+<script src="/js/index.js" async=""></script>
+<script src="/js/styles-index.js" async=""></script>
+</html>
