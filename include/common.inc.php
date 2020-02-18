@@ -67,5 +67,6 @@ include ROOT.'/classes/datamgr/inst.php';
 $instApi=new InstApi();
 $smarty->assign("InstInfo",$instApi->info(array("unicode"=>"yyc")));
 
+$smarty->assign("year",date("Y"));
 
 ?>

@@ -13,6 +13,9 @@ class PageApi extends ApiBase{
     public function indexgood($json=[]){
        return $this->curlPost("/page/indexgood",$json);
     }
+    public function indexcomment($json=[]){
+       return $this->curlPost("/page/indexcomment",$json);
+    }
 }
 
 ?>

@@ -13,10 +13,6 @@
   $smarty->assign("info",$info);
 
   $indexfriend=$pageapi->indexfriend();
-  //print_r($indexfriend);
-  for($i=0;$i<count($indexfriend);$i++){
-    $indexfriend[$i]["seq"]=$i;
-  }
   $smarty->assign("friendlist",$indexfriend);
 
   $indexfeature=$pageapi->indexfeature();
@@ -25,6 +21,14 @@
   $indexgood=$pageapi->indexgood();
   $smarty->assign("indexgood",$indexgood);
   
+  $indexcomment=$pageapi->indexcomment();
+  for($i=0;$i<10;$i++){
+
+    $indexcomment[]=$indexcomment[0];
+    $indexcomment[]=$indexcomment[1];
+  }
+  $smarty->assign("indexcomment",$indexcomment);
+
   $smarty->display(ROOT.'/templates/index.html');
   
 ?>
