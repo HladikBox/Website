@@ -1,0 +1,687 @@
+{{include file="$smarty_root/header.html"}}
+
+<body>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <div class="main-wrapper">
+                <div>
+                    {{include file="$smarty_root/nav.html"}}
+                    <section class="hero-banner-section hero-banner-common">
+                        <div class="bg-image"
+                            style="background-image:url({{$uploadpath}}pgfeature/{{$info.bg}})">
+                        </div>
+                        <div class="banner-details">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="banner-content">
+                                            <h1>{{$info.title}}</h1>
+                                            <p>{{$info.summary}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="feature-pg-wrap">
+                        <div class="blog-sub-nav fixed-sub-menu">
+                            <div class="container-fluid p-0 tab-section-wrap">
+                                <div class="sub-nav-head subnav-scroll resource-nav clearfix">
+                                    <nav class="fixed-subnav container navbar navbar-expand-lg">
+                                        <ul class="navbar-brand action-menu">
+                                            <li><a href="/"><img alt="contentstack-subnav-logo.svg"
+                                                        src="{{$uploadpath}}inst/{{$InstInfo.logobackimg}}" /></a>
+                                            </li>
+                                            <li><a class="inactiveLink" href="">特性</a></li>
+                                        </ul><button class="navbar-toggler collapsed close" type="button"
+                                            data-toggle="collapse" data-target="#navbarColor01"
+                                            aria-controls="navbarColor01" aria-expanded="false"
+                                            aria-label="Toggle navigation"><span
+                                                class="navbar-toggler-icon black-icon"></span></button>
+                                        <div class="collapse navbar-collapse" id="navbarColor01">
+                                            <ul class="form-inline search-wrap mob-search" style="display:none">
+                                                <li class="search-input">
+                                                    <form class="search-form search-form-blog"
+                                                        action="javascript:void(0)"><span
+                                                            class="fa fa-search search-icon"><img
+                                                                src="https://images.contentstack.io/v3/assets/blt1264fa9b448be721/blt7a9ad0286ac728fd/5cfaad4ca226ce6e30bf9995/download"
+                                                                alt="search icon" /></span><input type="text" value=""
+                                                            class="form-control" placeholder="" id="searchfilter" />
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                            <ul class="tab-sub-nav nav category-tabs navbar-nav ml-auto" role="tablist">
+                                                <li class="active nav-item"><a href="#1">Collaboration</a></li>
+                                                <li class="nav-item"><a href="#2">Optimization</a></li>
+                                                <li class="nav-item"><a href="#3">Enterprise Grade</a></li>
+                                                <li class="nav-item"><a href="#4">Integration</a></li>
+                                                <li class="nav-item"><a href="#5">Omnichannel</a></li>
+                                                <li class="nav-item"><a href="#6">Developer</a></li>
+                                                <li class="nav-item"><a href="#7">更多</a></li>
+                                            </ul>
+                                            <ul class="form-inline search-wrap ml-auto desktop-search"
+                                                style="display:none">
+                                                <li class="search-input">
+                                                    <form class="search-form search-form-blog"
+                                                        action="javascript:void(0)"><span
+                                                            class="fa fa-search search-icon"><img
+                                                                src="/imgs/search-icon.png"
+                                                                alt="search icon" /></span><input type="text" value=""
+                                                            class="form-control" placeholder="" id="searchfilter" />
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="section-row feature-section" id="1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 text-center">
+                                        <h2>智能且有效的协同开发</h2>
+                                        <p>商务人员和技术人员可以以最轻松的方式有效开发出软件技术产品</p>
+                                    </div>
+                                </div>
+                                <div class="features-section-tab">
+                                    <ul class="row nav nav-tabs nav-tabs-hover features-wrap">
+                                        <li class="active col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-1">无需部署</a></li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-2">自动生成</a></li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-3">自定义字段</a></li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-4">素材管理</a>
+                                        </li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-5">数据安全</a>
+                                        </li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-6">版本控制和回滚策略</a>
+                                        </li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-7">访问控制</a></li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-8">可视化模型设计</a></li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-9">多开发语言支持</a></li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-10">工作流</a></li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-11">插件</a></li>
+                                        <li class="col-md-4 col-sm-6 col-xs-12 features-col"><a class="features"
+                                                data-toggle="tab" href="#features-tab-12">模块化</a></li>
+                                    </ul>
+                                    <div class="tab-content slider-info-sec">
+                                        <div id="features-tab-1" class="active tab-pane ">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>你几乎可以不需要写一句后端的代码就完成整个软件的开发。</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="Automate and control publishing in Contentstack headless CMS"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blte2bcf41443e456e6/5d31a86a8e1c266b7b341355/cms-publishing-control .png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-2" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>在后端中最重要的三个模块管理系统，数据库和数据接口都几乎自动生成。</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="Schedule and automate publishing feature in Contentstack headless CMS"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt93ba90b5a27bd80c/5d31a865459ad56b80376fb3/schedule-automate-publishing.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-3" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>我们提供非常多的个性化字段，无论是商务人员还是技术人员都可以轻松定义需要的数据字段。</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="cms-custom-field.png"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt86c29cffbe7d0481/5d31a72e53569b5498b8c8fd/cms-custom-field.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-4" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>提供非常高可用性的素材管理系统，轻松把素材上传到OSS而无需写任何代码。</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="Feature in Contentstack headless CMS lets you manage images and how they are displayed"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt25367a8077ac1a5a/5d31a87ba03ffa5493dbfbf4/headless-cms-image-management.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-5" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>通过数据加密的方式对数据进行隔离，保证数据安全性。</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="Manage digital assets inside Contentstack headless CMS"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blta7ece24f739621ed/5d31a865ab87a650d4633932/cms-digital-assets-management.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-6" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>技术人员可</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="Compare and control content versions in Contentstack headless CMS"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt43cff324a6fb78cc/5d31a87bd715086a82f37bd8/cms-content-versioning.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-7" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>管理员通过设置不同的用户权限，让不同职位的人员控制不同的数据。</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="Manage roles, page access and publishing in Contentstack headless CMS"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt215e5c48e02aed77/5d31a885ab87a650d4633938/headless-cms-access-controls.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-8" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>Create unlimited content environments, such as development,
+                                                            testing, staging, and production, to map to your content
+                                                            production process.</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="Multi-environments feature in Contentstack headless CMS"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt18907bf67d1bdd7d/5d31a86013451f2b027b497d/cms-multi-environments.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-9" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>Enable global sites and applications with easy deployment
+                                                            across multiple languages and locales.</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="Manage multiple language versions in Contentstack headless CMS"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blta2edda901c2ebcdc/5d31a88afce04a2b08a5b32d/cms-multiple-languages.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-10" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>Set up and define workflows and approvals that map to your
+                                                            business processes for content management and publishing.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="cms-publishing-workflows.png"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt4d4479a33a305056/5d31a779c23af155e7688d12/cms-publishing-workflows.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-11" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>Group content to a ‘release’ to make it easy to bulk publish
+                                                            content associated with a specific project, event or
+                                                            campaign.</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="cms-group-publishing.png"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt80de983e920c4891/5d31a79945450a5148a26ba1/cms-group-publishing.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="features-tab-12" class="tab-pane">
+                                            <div class="row">
+                                                <div class="flexbox flex-vcenter flex-wrap">
+                                                    <div class="col-md-5 col-sm-12 col-xs-12 flex-item slide-desc">
+                                                        <p>Allow content editors to build and edit dynamic pages without
+                                                            needing a developer’s help.</p>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12 col-xs-12 flex-item slide-img"><img
+                                                            alt="cms-modular-blocks.png"
+                                                            class="img-responsive features-slide-img"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt0c403bdab17fd305/5d31a796c23af155e7688d1e/cms-modular-blocks.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-row bet-cms gray-bg" id="2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="col-md-12 col-xs-12 sec-desc-width text-center">
+                                            <h2>You Deserve a Better CMS</h2>
+                                            <p>Contentstack is the first headless CMS to address the needs of business
+                                                users and developers and improves content management for both old and
+                                                new digital channels.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 text-center features-sec-col">
+                                        <div class="heading-icon"><img alt="Orange snapping fingers icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt397cd044845bc0a4/5d31a82e3408c16b02a65b4a/snapping-fingers-icon.svg" />
+                                        </div>
+                                        <h3>Easy content management</h3>
+                                        <p>No training required thanks to an intuitive interface optimized for no-code
+                                            and low-code business users.</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 text-center features-sec-col">
+                                        <div class="heading-icon"><img alt="Orange iphone with check mark icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt169a409377724bb5/5d31a84aea57106a7dfe9042/iphone-icon.svg" />
+                                        </div>
+                                        <h3>Mobile optimized</h3>
+                                        <p>Your content and graphics are delivered and presented in the best way
+                                            possible for each mobile form factor.</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 text-center features-sec-col">
+                                        <div class="heading-icon"><img alt="Orange SaaS cloud icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt87ef56f3bb1dc377/5d31a83745450a5148a26bcf/saas-cloud-icon.svg" />
+                                        </div>
+                                        <h3>Managed in the cloud</h3>
+                                        <p>Benefit from the scale, efficiency and performance of the cloud alongside the
+                                            continuous improvements of our SaaS platform.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-row enterprise clearfix" id="3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="sec-desc-width col-md-12 col-xs-12 text-center">
+                                        <h2>Built for Enterprise</h2>
+                                        <p>A CMS that empowers your business users and plays nice with your IT.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 text-center feature-point clearfix  ">
+                                        <div class="heading-icon"><img alt="Orange clock icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blta5741e9605811cbd/5d31a833ab87a650d4633922/clock-icon.svg" />
+                                        </div>
+                                        <div class="icon-info">
+                                            <h3>Availability</h3>
+                                            <p>Improve your site and app reliability with a resilient cloud CMS, premium
+                                                SLAs, world-class DevOps services and 24x7 support.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 text-center feature-point clearfix  ">
+                                        <div class="heading-icon"><img alt="Orange scaling icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt6b4957049afbd6bc/5d31a83fa03ffa5493dbfbe2/scalability-icon.svg" />
+                                        </div>
+                                        <div class="icon-info">
+                                            <h3>Scalability</h3>
+                                            <p>Scale with a decoupled architecture, eliminate database bottlenecks and
+                                                automatically adjust your cloud infrastructure to match demand.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 text-center feature-point clearfix  ">
+                                        <div class="heading-icon"><img alt="Orange system and server security icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blta0e61b6bdaf7a863/5d31a84045450a5148a26bd3/system-server-security-icon.svg" />
+                                        </div>
+                                        <div class="icon-info">
+                                            <h3>Security</h3>
+                                            <p>Deploy access controls, SSO with SAML 2.0, two-factor authentication,
+                                                secure APIs, Webhook authentication and a 256-bit encrypted content
+                                                store.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 text-center feature-point clearfix  ">
+                                        <div class="heading-icon"><img
+                                                alt="Orange growth graph with arrow pointing up icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt32198d0b477b33e0/5d31a83b13451f2b027b4969/growth-graph-icon.svg" />
+                                        </div>
+                                        <div class="icon-info">
+                                            <h3>Performance</h3>
+                                            <p>Provide instant access to your content anywhere in the world and
+                                                guarantee performance via the most advanced CDN available today.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-row integration gray-bg clearfix" id="4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="sec-desc-width col-md-12 col-xs-12 text-center">
+                                        <h2>Integrations that Matter</h2>
+                                        <p>Integrate with all the content management tools you need through a
+                                            micro-services approach.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-12 text-center features-sec-col">
+                                        <div class="heading-icon"><img alt="Orange puzzle pieces linking icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt664068eb6c62b621/5d31a837a03ffa5493dbfbde/puzzle-pieces-icon.svg" />
+                                        </div>
+                                        <h3>Marketing integrations</h3>
+                                        <p>Enable quick integrations with industry leading tools for campaigns and
+                                            marketing automation, A/B testing, SEO and analytics.</p>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 text-center features-sec-col">
+                                        <div class="heading-icon"><img alt="Orange ecommerce cart with API icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt029ec9be3bcdd039/5d31a8338b0e6e5561a5e112/ecommerce-cart-icon.svg" />
+                                        </div>
+                                        <h3>Headless eCommerce</h3>
+                                        <p>Integrate with API-first eCommerce platforms for scalable transactions across
+                                            any channel.</p>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 text-center features-sec-col">
+                                        <div class="heading-icon"><img alt="Orange brain icon"
+                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blte157881030917376/5d31a83b8b0e6e5561a5e11e/brain-icon.svg" />
+                                        </div>
+                                        <h3>Smarter with AI</h3>
+                                        <p>Easily connect into any AI for better insights and improved decision making
+                                            when you create and distribute your digital content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-row omni-channel clearfix" id="5">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="sec-desc-width col-md-12 col-xs-12 text-center">
+                                        <h2>Omnichannel Content Delivery</h2>
+                                        <p>Your audience consumes content across many digital channels – upgrade to a
+                                            CMS that can handle them all.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row feature-row features-tab">
+                                            <div class="flexbox flex-vcenter flex-wrap">
+                                                <div class="left col-md-4 col-xs-12 text-left content">
+                                                    <ul class="nav nav-tabs nav-tabs-hover">
+                                                        <li class="active"><a data-toggle="tab" href="#featuretab-1">
+                                                                <h3>Native Mobile Support</h3>
+                                                                <p>Build applications quickly with mobile SDKs with all
+                                                                    data stored and delivered in the mobile-friendly
+                                                                    JSON format.</p>
+                                                            </a></li>
+                                                        <li class=""><a data-toggle="tab" href="#featuretab-2">
+                                                                <h3>Unified CMS</h3>
+                                                                <p>Use a single CMS to manage and publish content across
+                                                                    mobile, web and IoT.</p>
+                                                            </a></li>
+                                                        <li class=""><a data-toggle="tab" href="#featuretab-3">
+                                                                <h3>AR &amp; VR ready</h3>
+                                                                <p>Activate new digital channels, including bots,
+                                                                    interactive displays, AR and VR.</p>
+                                                            </a></li>
+                                                    </ul>
+                                                </div>
+                                                <div id="feature-tabs"
+                                                    class="rigth col-md-8 col-xs-12 text-center tab-content">
+                                                    <div id="featuretab-1" class="active tab-pane "><img
+                                                            alt="Asset management in Contentstack headless CMS"
+                                                            class="img-responsive feature-graphic"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt3927f8dfba7b43d1/5d31a885ea57106a7dfe904c/headless-cms-assets-management.png" />
+                                                    </div>
+                                                    <div id="featuretab-2" class="tab-pane"><img
+                                                            alt="Automated publishing feature in Contentstack headless CMS"
+                                                            class="img-responsive feature-graphic"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/bltaf6b7dc5d7328aed/5d31a88a8428de140207573f/headless-cms-automated-publishing.png" />
+                                                    </div>
+                                                    <div id="featuretab-3" class="tab-pane"><img
+                                                            alt="Multiple development environments feature in Contentstack headless CMS"
+                                                            class="img-responsive feature-graphic"
+                                                            src="https://images.contentstack.io/v3/assets/blt77283b164776448a/bltda5241d6371f77d1/5d31a88ffce04a2b08a5b331/multiple-cms-environments.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-row dev-friendly" id="6">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="sec-desc-width col-md-12col-xs-12 text-center">
+                                        <h2>Developer Friendly</h2>
+                                        <p>All the content management tools developers need to build websites and
+                                            applications quickly without starting from scratch.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="dev-wrap flexbox flex-wrap">
+                                        <div class="col-md-4 col-sm-6 col-xs-12 dev-service-col">
+                                            <div class="dev-services">
+                                                <h3>APIs</h3>
+                                                <p>RESTful APIs covering content management, content publishing and
+                                                    image manipulation/optimization.</p><span class="dev-services-icon"
+                                                    title="API.svg"
+                                                    style="background-image:url(https://images.contentstack.io/v3/assets/blt77283b164776448a/bltead5042b92dddecb/5d31a86c6f5acc1541a3496f/API.svg);display:block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 dev-service-col">
+                                            <div class="dev-services">
+                                                <h3>SDKs</h3>
+                                                <p>Code in your favorite language with iOS, Android, JavaScript, Ruby,
+                                                    PHP, Java, React Native and Node.js SDKs.</p><span
+                                                    class="dev-services-icon" title="SDK.svg"
+                                                    style="background-image:url(https://images.contentstack.io/v3/assets/blt77283b164776448a/blt976a9d73644d531f/5d31a89b13451f2b027b4991/SDK.svg);display:block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 dev-service-col">
+                                            <div class="dev-services">
+                                                <h3>Webhooks</h3>
+                                                <p>Automate publishing processes end-to-end by notifying third party
+                                                    systems of CMS events using Webhooks.</p><span
+                                                    class="dev-services-icon" title="WebHooks.svg"
+                                                    style="background-image:url(https://images.contentstack.io/v3/assets/blt77283b164776448a/blt8b8254eb93507530/5d31a897fce04a2b08a5b339/WebHooks.svg);display:block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 dev-service-col">
+                                            <div class="dev-services">
+                                                <h3>Microservices</h3>
+                                                <p>Eliminate plugin proliferation and feature bloat with a decoupled,
+                                                    microservices-based architecture.</p><span class="dev-services-icon"
+                                                    title="Microservise.svg"
+                                                    style="background-image:url(https://images.contentstack.io/v3/assets/blt77283b164776448a/blt773384508a9dd569/5d31a8970674ad29feafe44f/Microservise.svg);display:block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 dev-service-col">
+                                            <div class="dev-services">
+                                                <h3>Web framework</h3>
+                                                <p>Accelerate development with the only Node.js web application
+                                                    framework available for headless CMS.</p><span
+                                                    class="dev-services-icon" title="js.svg"
+                                                    style="background-image:url(https://images.contentstack.io/v3/assets/blt77283b164776448a/blt2b64eb5d291708f0/5d31a8991373f929f9eb5369/js.svg);display:block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12 dev-service-col">
+                                            <div class="dev-services">
+                                                <h3>Content migration tools</h3>
+                                                <p>Import and migrate content and digital assets from legacy CMS
+                                                    environments, including Drupal and WordPress.</p><span
+                                                    class="dev-services-icon" title="Content migration tools.svg"
+                                                    style="background-image:url(https://images.contentstack.io/v3/assets/blt77283b164776448a/blt9668d85a5ed5a37a/5d31a876d2cfe355f107f048/Contentmigrationtools.svg);display:block"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-row all-feature-wrap clearfix" id="7">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 text-center">
+                                        <h2>Other Headless CMS Features</h2>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="row col-md-12 all-features clearfix">
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Rich text editing</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Single sign-on (SSO)</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Global search</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Markdown</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Scheduled publishing</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Organization management</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Unlimited users</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Bulk file uploads</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Quick preview</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Audit logs</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Multisite support</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
+                                            <li>Microservices</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section-row contact-us clearfix">
+                            <div class="tryforfree"
+                                style="background-image:url(https://images.contentstack.io/v3/assets/blt1264fa9b448be721/bltb6939b357fb70b33/5d08ba3196d2d1b65a981c69/download?format=png8&amp;auto=webp)">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="content col-md-12">
+                                            <div class="">
+                                                <h2 class="head-text">Ready to get started?</h2>
+                                                <div class="rounded-pill button"><a
+                                                        href="/company/contact-us?subject=free%20trial">Try for Free</a>
+                                                </div>
+                                                <div id="contact-global" class="contact-us-form text-left"
+                                                    style="display:none">
+                                                    <div class="features-demo-form">
+                                                        <form id="mktoForm_1035" class="demo-mkt-form"></form>
+                                                    </div>
+                                                </div>
+                                                <div class="try-free-button"><a
+                                                        href="/company/contact-us?subject=get%20a%20demo">Request a
+                                                        Demo</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    {{include file="$smarty_root/footer.html"}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    $(document).ready((function () {
+        e(); 
+        $(".content").hover((function () {
+            $(".flyout").removeClass("hidden")
+        }), (function () {
+            $(".flyout").addClass("hidden")
+        }))
+    }));
+    $(".tab-sub-nav li a").click((function () {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        }, 800)
+    }));
+    var e = function () {
+            $(".one-pager-anchor a").click((function () {
+                return $(".one-pager-anchor li").removeClass("active"), $(this).parent("li").addClass(
+                    "active"), $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                }, 800), !1
+            }))
+        },
+        a = $(".features-wrap .active").children("a").attr("href");
+    $(".features-wrap li a").click((function () {
+        $(".features-wrap .active").removeClass("active"), $(this).parent().addClass("active"), a = $(this)
+            .attr("href")
+    })), $(".features-wrap li a").hover((function () {
+        var e = $(this).attr("href");
+        $(".slider-info-sec .active").removeClass("active"), $(e).addClass("active")
+    }), (function () {
+        $(".slider-info-sec .active").removeClass("active"), $(a).addClass("active")
+    })), $(".features-tab ul li").hover((function () {
+        $(".features-tab ul .active").removeClass("active"), $(this).addClass("active"), $(this).find("a")
+            .addClass("active");
+        var e = $(this).find("a").attr("href");
+        $("#feature-tabs .active").removeClass("active show"), $(e).addClass("active show")
+    })), $(window).scroll((function () {
+        var e = $(window).scrollTop();
+        $(".section-row").each((function (a) {
+            if($(this).position().top <= e - 510 ){
+                $(".tab-sub-nav li.active").removeClass(
+                "active"), $(".tab-sub-nav li").eq(a).addClass("active")
+            }
+        }))
+    }))
+</script>
+
+</html>

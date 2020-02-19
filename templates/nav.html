@@ -1,0 +1,88 @@
+<header id="header">
+        <div class="notification-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8  notification-tab">
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 display-none-tab d-lg-block text-right">
+                        <div class="top-nav-right">
+                            <ul class="top-nav-menu">
+                                <li><a href="{{$docurl}}/">文档</a></li>
+                                <li><a href="{{$consoleurl}}/">登录</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav align-items-center justify-content-start">
+            <nav class="navbar navbar-toggleable-md navbar-expand-lg">
+                <div class="container"><a aria-current="page" class="navbar-brand" href="/"><img
+                            alt="Contentstack logo" class="logo"
+                            src="{{$uploadpath}}inst/{{$InstInfo.logo}}" /></a><button
+                        class="navbar-toggler collapsed navResponsive" type="button"
+                        data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown active"><a class="nav-link">产品</a>
+                                <ul class="dropdown-menu">
+                                    <div></div>
+                                    <li><a class="dropdown-item" href="/features">特征</a></li>
+                                    <li><a class="dropdown-item" href="/developers-cms">技术人员</a></li>
+                                    <li><a class="dropdown-item" href="/business-cms">商业拓展</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/partners">合作伙伴</a></li>
+                                    <li><a class="dropdown-item" href="/integrations">系统集成</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown active"><a class="nav-link">教程</a>
+                                <ul class="dropdown-menu">
+                                    <div> </div>
+                                    <li><a class="dropdown-item" href="/resources">资源</a></li>
+                                    <li><a class="dropdown-item" href="/blog">博客</a></li>
+                                    <li><a class="dropdown-item" href="/cms-guides">使用向导</a></li>
+                                    <li><a class="dropdown-item" href="{{$docurl}}">文档</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown active"><a class="nav-link">我们</a>
+                                <ul class="dropdown-menu">
+                                    <div></div>
+                                    <li><a class="dropdown-item" href="/about">关于我们</a></li>
+                                    <li><a class="dropdown-item" href="/company/news">最新</a></li>
+                                    <li><a class="dropdown-item" href="/company/press">新闻</a></li>
+                                    <li><a class="dropdown-item" href="/company/careers">照片</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/company/contact-us">联系我们</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown active"><a class="nav-link">价格</a>
+                                <ul class="dropdown-menu">
+                                    <div></div>
+                                    <li><a class="dropdown-item" href="/pricing">定价计划</a></li>
+                                    <li><a class="dropdown-item" href="/roi-calculator">ROI计算器</a></li>
+                                </ul>
+                            </li>
+                            <div class="try-free button display-none-tab "><a
+                                    href="/company/contact-us?subject=free%20trial">免费试用</a>
+                            </div>
+                        </ul>
+                        <div
+                            class="col-lg-4 col-md-4 d-lg-none display-block-tab text-right doc-login-tab">
+                            <div class="top-nav-right">
+                                <ul class="top-nav-menu">
+                                    <li><a href="{{$docurl}}">文档</a></li>
+                                    <li><a href="{{$consoleurl}}">登录</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>

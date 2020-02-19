@@ -1,8 +1,9 @@
 RewriteEngine on
 
-RewriteRule ^((?:css|fonts|js|).*|favicon.ico|favicon.png) $1 [NC,L]
+RewriteRule ^((?:css|fonts|js|).*|favicon.ico|favicon.png) $1 [NC]
 
-RewriteRule ^([a-zA-Z0-9\-]*)$ $1.php [NC,L]
-RewriteRule ^([a-zA-Z0-9\-]*)/$ $1.php [NC,L]
-RewriteRule ^([a-zA-Z0-9\-]*)/([a-zA-Z0-9\-]*)$ /$1/$2.php [NC,L]
-RewriteRule ^([a-zA-Z0-9\-]*)/([a-zA-Z0-9\-]*)/$ /$1/$2.php [NC,L]
+RewriteRule ^([0]*)$ /index.php [NC]
+RewriteRule ^([a-zA-Z0-9\-]*)$ /$1.php [NC]
+RewriteRule ^([a-zA-Z0-9\-]*)/$ /$1.php [NC]
+RewriteRule ^([a-zA-Z0-9\-]*)/([a-zA-Z0-9\-]*)$ /$1/$2.php [NC]
+RewriteRule ^([a-zA-Z0-9\-]*)/([a-zA-Z0-9\-]*)/$ /$1/$2.php [NC]
