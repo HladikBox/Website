@@ -12,6 +12,10 @@
   $info=$pageapi->feature();
   $smarty->assign("info",$info);
 
+  
+  $list=$pageapi->featurelist();
+  $smarty->assign("list",$list);
+
   $smarty->display(ROOT.'/templates/features.html');
   
 ?>
