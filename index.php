@@ -27,6 +27,9 @@
     $indexcomment[]=$indexcomment[0];
     $indexcomment[]=$indexcomment[1];
   }
+
+  
+  $smarty->assign("trytips","相信我们，您会有惊喜");
   $smarty->assign("indexcomment",$indexcomment);
 
   $smarty->display(ROOT.'/templates/index.html');

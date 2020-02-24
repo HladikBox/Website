@@ -19,6 +19,15 @@ class ApiBase{
         $content=json_decode($content,true);
         return $content;
     }
+
+
+
+    public static function HtmlDecode($str) {
+        $str=str_replace("/alucard263096/applinkweb/upload/",
+        "http://cmsdev.app-link.org/alucard263096/applinkweb/upload/",$str);
+        $str=htmlspecialchars_decode($str);
+        return $str;
+    }
 }
 
 ?>

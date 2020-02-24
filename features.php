@@ -16,6 +16,7 @@
   $list=$pageapi->featurelist();
   $smarty->assign("list",$list);
 
+  $smarty->assign("trytips","准备好尝试了？");
   $smarty->display(ROOT.'/templates/features.html');
   
 ?>

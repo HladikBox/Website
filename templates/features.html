@@ -77,7 +77,7 @@
                             <section class="section-row {{$item.label}}" id="{{$item.id}}">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-12 col-xs-12 text-center">
+                                        <div class="col-md-12 col-xs-12 sec-desc-width text-center">
                                             <h2>{{$item.title}}</h2>
                                             <p>{{$item.summary}}</p>
                                         </div>
@@ -87,7 +87,7 @@
                                         <ul class="row nav nav-tabs nav-tabs-hover features-wrap">
                                                 {{foreach from=$item.subitem item=subitem  key=j}}
 
-                                                <li class="{{if $j==0}}active{{/if}} col-md-4 col-sm-6 col-xs-12 features-col">
+                                                <li class="{{if $j==0}}active{{/if}} col-md-4 col-sm-6 col-xs-12  features-col">
                                                     <a class="features" data-toggle="tab" href="#features-tab-{{$subitem.id}}">{{$subitem.name}}</a></li>
                                                 {{/foreach}}
                                         </ul>
@@ -114,7 +114,7 @@
                                     {{if $item.showtype=='2'}}
                                         <div class="row">
                                             {{foreach from=$item.subitem item=subitem  key=j}}
-                                            <div class="col-md-4 col-sm-4 col-xs-12 text-center features-sec-col">
+                                            <div class="col-md-{{$item.subitemcount}} col-sm-{{$item.subitemcount}} col-xs-12 text-center features-sec-col feature-point clearfix">
                                                 <div class="heading-icon"><img alt="{{$subitem.name}}"
                                                         src="{{$uploadpath}}pgindex/{{$subitem.img}}" />
                                                 </div>
@@ -156,8 +156,8 @@
                                         {{/if}}
                                         {{if $item.showtype=='4'}}
                                         <div class="row">
-                                                <div class="dev-wrap flexbox flex-wrap">
-                                                        {{foreach from=$item.subitem item=subitem  key=j}}
+                                                <div class="dev-wrap flexbox flex-wrap" style="width:100%">
+                                                    {{foreach from=$item.subitem item=subitem  key=j}}
                                                     <div class="col-md-4 col-sm-6 col-xs-12 dev-service-col">
                                                         <div class="dev-services">
                                                             <h3>{{$subitem.name}}</h3>
@@ -173,11 +173,11 @@
                                         {{if $item.showtype=='5'}}
                                         <div class="row">
                                                 <div class="row col-md-12 all-features clearfix">
+                                                    {{foreach from=$item.subitem item=subitem  key=j}}
                                                     <ul class="col-md-4 col-sm-6 col-xs-12 features-list">
-                                                        {{foreach from=$item.subitem item=subitem  key=j}}
                                                         <li>{{$subitem.name}}</li>
-                                                        {{/foreach}}
                                                     </ul>
+                                                    {{/foreach}}
                                                 </div>
                                             </div>
                                         {{/if}}

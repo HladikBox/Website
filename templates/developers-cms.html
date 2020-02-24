@@ -1,0 +1,172 @@
+{{include file="$smarty_root/header.html"}}
+
+<body>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <div class="main-wrapper">
+                <div>
+                    {{include file="$smarty_root/nav.html"}}
+
+                    <div class="developer-view">
+                        <section class="hero-banner-section hero-banner-common">
+                            <div class="bg-image" style="background-image:url({{$uploadpath}}pgfeature/{{$info.bg}})">
+                            </div>
+                            <div class="banner-details">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="banner-content">
+                                                <h1>{{$info.title}}</h1>
+                                                <p>{{$info.summary}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="dev-tab-section clearfix">
+                            <div class="blog-sub-nav fixed-sub-menu">
+                                <div class="container-fluid p-0 tab-section-wrap">
+                                    <div class="sub-nav-head subnav-scroll resource-nav clearfix">
+                                        <nav class="fixed-subnav container navbar navbar-expand-lg">
+                                            <ul class="navbar-brand action-menu">
+                                                <li><a href="/"><img alt="contentstack-subnav-logo.svg"
+                                                            src="{{$uploadpath}}inst/{{$InstInfo.logobackimg}}" /></a>
+                                                </li>
+                                                <li><a class="inactiveLink" href="">开发者</a></li>
+                                            </ul><button class="navbar-toggler collapsed close" type="button"
+                                                data-toggle="collapse" data-target="#navbarColor01"
+                                                aria-controls="navbarColor01" aria-expanded="false"
+                                                aria-label="Toggle navigation"><span
+                                                    class="navbar-toggler-icon black-icon"></span></button>
+                                            <div class="collapse navbar-collapse" id="navbarColor01">
+                                                <ul class="form-inline search-wrap mob-search" style="display:none">
+                                                    <li class="search-input">
+                                                        <form class="search-form search-form-blog"
+                                                            action="javascript:void(0)"><span
+                                                                class="fa fa-search search-icon"><img
+                                                                    src="/imgs/search-icon.png"
+                                                                    alt="search icon" /></span><input type="text"
+                                                                value="" class="form-control" placeholder=""
+                                                                id="searchfilter" /></form>
+                                                    </li>
+                                                </ul>
+                                                <ul class="tab-sub-nav nav category-tabs navbar-nav ml-auto"
+                                                    role="tablist">
+                                                    <li><a href="/docs">文档</a></li>
+                                                    <li><a href="/docs/platforms">平台</a></li>
+                                                    <li><a href="/faqs">常见问题</a></li>
+                                                    <li><a title="联系我们" href="/company/contact-us"
+                                                            class="cta-outline">联系我们</a></li>
+                                                </ul>
+                                                <ul class="form-inline search-wrap ml-auto desktop-search"
+                                                    style="display:none">
+                                                    <li class="search-input">
+                                                        <form class="search-form search-form-blog"
+                                                            action="javascript:void(0)"><span
+                                                                class="fa fa-search search-icon"><img
+                                                                    src="https://images.contentstack.io/v3/assets/blt1264fa9b448be721/blt7a9ad0286ac728fd/5cfaad4ca226ce6e30bf9995/download"
+                                                                    alt="search icon" /></span><input type="text"
+                                                                value="" class="form-control" placeholder=""
+                                                                id="searchfilter" /></form>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        {{foreach from=$list item=item  key=k}}
+                        <section class="{{$item.label}}">
+                            <div class="content-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2 class="text-center">{{$item.title}}</h2>
+                                            <p class="text-center">{{$item.summary}}</p>
+                                        </div>
+                                    </div>
+                                    {{$item.content}}
+                                </div>
+                            </div>
+                        </section>
+                        {{/foreach}}
+
+
+                        <section class="section-row testimonials clearfix">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="text-center">看看其它开发者都怎么说</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 text-center">
+                                        <div class="center">
+                                            <div class="slick-slider slider-nav slick-initialized" dir="ltr">
+                                                <div class="slick-list" style="padding:0px 50px">
+                                                    <div class="slick-track" id="commentslick">
+                                                        {{foreach from=$commentlist item=item key=k}}
+                                                        <div class="slick-slide">
+                                                            <div><img class="slide-image"
+                                                                    src="{{$uploadpath}}pgindex/{{$item.logo}}"
+                                                                    tabindex="-1"
+                                                                    style="width:100%;display:inline-block" /></div>
+                                                        </div>
+                                                        {{/foreach}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-content">
+                                            <div class="slick-slider slider-for slick-initialized" dir="ltr">
+                                                <div class="slick-list">
+                                                    <div class="slick-track">
+                                                        {{foreach from=$commentlist item=item key=k}}
+                                                        <div data-index="4" class="slick-slide" tabindex="-1"
+                                                            aria-hidden="true"
+                                                            style="outline:none;width:9.090909090909092%;position:relative;left:-36px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease">
+                                                            <div>
+                                                                <div class="testimonial-content" tabindex="-1"
+                                                                    style="width:100%;display:inline-block">
+                                                                    <p>&quot;{{$item.summary}}&quot;</p><span
+                                                                        class="title">– {{$item.commentter}},
+                                                                        {{$item.position}}, {{$item.name}}</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        {{/foreach}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <script>
+                            $(document).ready(function () {
+
+                                $('#commentslick').slick({
+                                    autoplay:true,
+                                    autoplaySpeed:5000,
+                                    dots: false,
+                                    lazyLoad: 'ondemand',
+                                    speed: 300,
+                                    slidesToShow:3,
+                                    touchMove: false,
+                                    slidesToScroll: 1
+                                });
+                            });
+                        </script>
+                        {{include file="$smarty_root/footer2.html"}}
+                    </div>
+                    {{include file="$smarty_root/footer.html"}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
