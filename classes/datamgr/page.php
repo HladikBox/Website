@@ -31,6 +31,21 @@ class PageApi extends ApiBase{
     public function developercmssay($json=[]){
        return $this->curlPost("/page/developercmssay",$json);
     }
+    public function businesscms($json=[]){
+       return $this->curlPost("/page/businesscms",$json);
+    }
+    public function partners($json=[]){
+       return $this->curlPost("/page/partners",$json);
+    }
+    public function resourcesinfo($json=[]){
+       return $this->curlPost("/page/resourcesinfo",$json);
+    }
+    public function resourcelist($json=[]){
+       return $this->curlPost("/page/resourcelist",$json);
+    }
+    public function resourcesdetail($json=[]){
+       return $this->curlPost("/page/resourcesdetail",$json);
+    }
 }
 
 ?>

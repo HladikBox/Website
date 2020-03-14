@@ -65,7 +65,7 @@
                                                         <form class="search-form search-form-blog"
                                                             action="javascript:void(0)"><span
                                                                 class="fa fa-search search-icon"><img
-                                                                    src="https://images.contentstack.io/v3/assets/blt1264fa9b448be721/blt7a9ad0286ac728fd/5cfaad4ca226ce6e30bf9995/download"
+                                                                    src="/imgs/search-icon.png"
                                                                     alt="search icon" /></span><input type="text"
                                                                 value="" class="form-control" placeholder=""
                                                                 id="searchfilter" /></form>
@@ -106,7 +106,7 @@
                                         <div class="center">
                                             <div class="slick-slider slider-nav slick-initialized" dir="ltr">
                                                 <div class="slick-list" style="padding:0px 50px">
-                                                    <div class="slick-track" id="commentslick">
+                                                    <div class="slick-track" id="companyslick">
                                                         {{foreach from=$commentlist item=item key=k}}
                                                         <div class="slick-slide">
                                                             <div><img class="slide-image"
@@ -122,11 +122,9 @@
                                         <div class="slider-content">
                                             <div class="slick-slider slider-for slick-initialized" dir="ltr">
                                                 <div class="slick-list">
-                                                    <div class="slick-track">
+                                                    <div class="slick-track" id="commentslick">
                                                         {{foreach from=$commentlist item=item key=k}}
-                                                        <div data-index="4" class="slick-slide" tabindex="-1"
-                                                            aria-hidden="true"
-                                                            style="outline:none;width:9.090909090909092%;position:relative;left:-36px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease">
+                                                        <div class="slick-slide" >
                                                             <div>
                                                                 <div class="testimonial-content" tabindex="-1"
                                                                     style="width:100%;display:inline-block">
@@ -146,19 +144,33 @@
                             </div>
                         </section>
                         <script>
-                            $(document).ready(function () {
-
-                                $('#commentslick').slick({
+                            $(document).ready(function(){
+                               $("#companyslick").slick({
+                                   centerMode: true,
                                     autoplay:true,
                                     autoplaySpeed:5000,
-                                    dots: false,
                                     lazyLoad: 'ondemand',
                                     speed: 300,
-                                    slidesToShow:3,
+                                    slidesToShow: 3,
+                                    touchMove: false,
+                                    slidesToScroll: 1});
+
+                                $('#commentslick').slick({dots: false,
+                                    lazyLoad: 'ondemand',
+                                    speed: 300,
                                     touchMove: false,
                                     slidesToScroll: 1
                                 });
+                                
+                                $('#companyslick').on('afterChange', function(event, slick, currentSlide){
+                                        $("#commentslick").slick("slickGoTo",currentSlide);
+                                    });
                             });
+                            
+                            function changeCommentSlide(k){
+                                    $("#companyslick").slick("slickGoTo",k);
+                                    $("#commentslick").slick("slickGoTo",k);
+                                }
                         </script>
                         {{include file="$smarty_root/footer2.html"}}
                     </div>

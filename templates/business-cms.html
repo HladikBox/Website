@@ -1,0 +1,94 @@
+{{include file="$smarty_root/header.html"}}
+
+<body>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <div class="main-wrapper">
+                <div>
+                    {{include file="$smarty_root/nav.html"}}
+
+                    <div class="bussiness-banner">
+                        <section class="hero-banner-section hero-banner-common">
+                            <div class="bg-image" style="background-image:url({{$uploadpath}}pgfeature/{{$info.bg}})">
+                            </div>
+                            <div class="banner-details">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="banner-content">
+                                                <h1>{{$info.title}}</h1>
+                                                <p>{{$info.summary}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <section class="main-wrapper bussines-wrapper">
+                        <div class="blog-sub-nav fixed-sub-menu">
+                            <div class="container-fluid p-0 tab-section-wrap">
+                                <div class="sub-nav-head subnav-scroll resource-nav clearfix">
+                                    <nav class="fixed-subnav container navbar navbar-expand-lg">
+                                        <ul class="navbar-brand action-menu">
+                                            <li><a href="/"><img alt="contentstack-subnav-logo.svg"
+                                                        src="{{$uploadpath}}inst/{{$InstInfo.logobackimg}}" /></a>
+                                            </li>
+                                            <li><a class="inactiveLink" href="">商务人士</a></li>
+                                        </ul><button class="navbar-toggler collapsed close" type="button"
+                                            data-toggle="collapse" data-target="#navbarColor01"
+                                            aria-controls="navbarColor01" aria-expanded="false"
+                                            aria-label="Toggle navigation"><span
+                                                class="navbar-toggler-icon black-icon"></span></button>
+                                        <div class="collapse navbar-collapse" id="navbarColor01">
+                                            <ul class="form-inline search-wrap mob-search" style="display:none">
+                                                <li class="search-input">
+                                                    <form class="search-form search-form-blog"
+                                                        action="javascript:void(0)"><span
+                                                            class="fa fa-search search-icon"><img
+                                                                src="/imgs/search-icon.png"
+                                                                alt="search icon" /></span><input type="text" value=""
+                                                            class="form-control" placeholder="" id="searchfilter" />
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                            <ul class="tab-sub-nav nav category-tabs navbar-nav ml-auto" role="tablist">
+                                                <li><a href="/docs">文档</a></li>
+                                                <li><a href="/docs/platforms">平台</a></li>
+                                                <li><a href="/faqs">常见问题</a></li>
+                                                <li><a title="联系我们" href="/company/contact-us"
+                                                        class="cta-outline">联系我们</a></li>
+                                            </ul>
+                                            <ul class="form-inline search-wrap ml-auto desktop-search"
+                                                style="display:none">
+                                                <li class="search-input">
+                                                    <form class="search-form search-form-blog"
+                                                        action="javascript:void(0)"><span
+                                                            class="fa fa-search search-icon"><img
+                                                                src="/imgs/search-icon.png"
+                                                                alt="search icon" /></span><input type="text" value=""
+                                                            class="form-control" placeholder="" id="searchfilter" />
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bussiness-page">
+                            {{$info.content}}
+                        </div>
+
+                    </section>
+                    {{include file="$smarty_root/footer2.html"}}
+
+                    {{include file="$smarty_root/footer.html"}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
