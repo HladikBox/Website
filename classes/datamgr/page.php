@@ -46,6 +46,18 @@ class PageApi extends ApiBase{
     public function resourcesdetail($json=[]){
        return $this->curlPost("/page/resourcesdetail",$json);
     }
+
+    public function aboutusindex($json=[]){
+      return $this->curlPost("/page/aboutusindex",$json);
+   }
+
+   
+   public function aboutusitem($json=[]){
+      return $this->curlPost("/page/aboutusitem",$json);
+   }
+   public function officelocation($json=[]){
+      return $this->curlPost("/page/officelocation",$json);
+   }
 }
 
 ?>
