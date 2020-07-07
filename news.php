@@ -12,11 +12,11 @@
   include ROOT.'/classes/datamgr/page.php';
   $pageapi=new PageApi();
   
-  $info=$pageapi->aboutusindex();
+  $info=$pageapi->newsindex();
   $smarty->assign("info",$info);
 
   
-  $list=$pageapi->aboutusitem();
+  $list=$pageapi->newslist();
   $smarty->assign("list",$list);
 
   $offerlist=$pageapi->officelocation();

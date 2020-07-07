@@ -58,6 +58,22 @@ class PageApi extends ApiBase{
    public function officelocation($json=[]){
       return $this->curlPost("/page/officelocation",$json);
    }
+
+   public function newsindex($json=[]){
+      return $this->curlPost("/page/newsindex",$json);
+   }
+
+   public function newslist($json=[]){
+      return $this->curlPost("/page/newslist",$json);
+   }
+   public function zhaopianindex($json=[]){
+      return $this->curlPost("/page/zhaopianindex",$json);
+   }
+   public function lianxiwomenindex($json=[]){
+      return $this->curlPost("/page/lianxiwomenindex",$json);
+   }
+   
+
 }
 
 ?>

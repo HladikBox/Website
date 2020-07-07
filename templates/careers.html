@@ -1,0 +1,66 @@
+{{include file="$smarty_root/header.html"}}
+
+<body>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <div class="main-wrapper">
+                <div>
+                    {{include file="$smarty_root/nav.html"}}
+
+                
+
+                   
+                    <div class="careers-page-wrapper">
+                        <section class="hero-banner-section hero-banner-common">
+                            <div class="bg-image"
+                                style="background-image:url({{$uploadpath}}zhaopian/{{$info.bg}})">
+                            </div>
+                            <div class="banner-details">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="banner-content">
+                                                <h1>{{$info.title}}</h1>
+                                                <p>{{$info.summary}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="careers-page-section">
+                            <div class="about-careers">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>{{$info.content1}}</h2>
+                                            <p class="content">{{$info.content2}}</p><img
+                                                alt="contentstack-team-campus.JPG"
+                                                src="{{$uploadpath}}aboutusindex/{{$info.img}}"/>
+                                            <p>
+                                                <!-- -->{{$info.content3}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="open-job-post container">
+                                <div class="job-post-section-title">
+                                    <h2>We are Hiring</h2>
+                                </div>
+                                <div id="grnhse_app"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                       
+                </div>
+
+                    {{include file="$smarty_root/footer.html"}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

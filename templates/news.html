@@ -10,7 +10,7 @@
                     <div class="about-page-section">
                         <section class="hero-banner-section hero-banner-common">
                             <div class="bg-image"
-                                style="background-image:url(https://images.contentstack.io/v3/assets/blt77283b164776448a/blt44f02593aa78d65f/5d4158456380a83d9b8cd4a1/new-hero-banner.png)">
+                                style="background-image:url({{$uploadpath}}news/{{$info.bg}})">
                             </div>
                             <div class="banner-details">
                                 <div class="container">
@@ -25,52 +25,56 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="abt-nav fixed-sub-menu">
+                        <section class="news-wrap">
                             <div class="blog-sub-nav fixed-sub-menu">
                                 <div class="container-fluid p-0 tab-section-wrap">
                                     <div class="sub-nav-head subnav-scroll resource-nav clearfix">
-                                        <nav class="fixed-subnav container navbar navbar-expand-lg">
+                                        <nav class="container navbar navbar-expand-lg">
                                             <ul class="navbar-brand action-menu">
-                                                <li><a href="/"><img alt="contentstack-subnav-logo.svg"
+                                                <li><a href="/"><img alt="News"
                                                             src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt23efffca0327aed1/5d31aad0522db85566f8d4cc/contentstack-subnav-logo.svg" /></a>
                                                 </li>
-                                                <li><a class="inactiveLink" href="">公司</a></li>
-                                            </ul><button class="navbar-toggler collapsed close" type="button"
+                                                <li><a class="inactiveLink" href=" ">新闻</a></li>
+                                            </ul><button class="navbar-toggler collapsed" type="button"
                                                 data-toggle="collapse" data-target="#navbarColor01"
                                                 aria-controls="navbarColor01" aria-expanded="false"
                                                 aria-label="Toggle navigation"><span
                                                     class="navbar-toggler-icon black-icon"></span></button>
                                             <div class="collapse navbar-collapse" id="navbarColor01">
-                                                <ul class="form-inline search-wrap mob-search" style="display:none">
+                                                <ul class="search-wrap mob-search">
                                                     <li class="search-input">
                                                         <form class="search-form search-form-blog"
                                                             action="javascript:void(0)"><span
                                                                 class="fa fa-search search-icon"><img
                                                                     src="https://images.contentstack.io/v3/assets/blt1264fa9b448be721/blt7a9ad0286ac728fd/5cfaad4ca226ce6e30bf9995/download"
-                                                                    alt="search icon" /></span><input type="text"
-                                                                value="" class="form-control" placeholder=""
-                                                                id="searchfilter" /></form>
+                                                                    alt="search icon" /></span><input type="text" value=""
+                                                                id="searchfilter" class="form-control"
+                                                                placeholder="Search news" /></form>
                                                     </li>
                                                 </ul>
-                                                <ul class="tab-sub-nav nav category-tabs navbar-nav ml-auto"
-                                                    role="tablist">
-                                                    <li class="active nav-item"><a href="#1">关于我们</a></li>
-                                                    <li class="nav-item"><a href="#2">办公地点</a></li>
-                                                    <li class="nav-item"><a href="/company/news">新闻</a></li>
-                                                    <li class="nav-item"><a href="/company/press">消息</a></li>
-                                                    <li><a title="Contact us" href="/company/contact-us"
-                                                            class="cta-outline">联系我们</a></li>
+                                                <ul class="tab-sub-nav navbar-nav nav nav-tabs ml-auto" role="tablist">
+                                                    <li role="presentation" class=" nav-item"><a href="#news-0"
+                                                            aria-controls="home" role="tab" data-toggle="tab">2020</a></li>
+                                                    <li role="presentation" class="nav-item active"><a href="#news-1"
+                                                            aria-controls="home" role="tab" data-toggle="tab">2019</a></li>
+                                                    <li role="presentation" class="nav-item "><a href="#news-2"
+                                                            aria-controls="home" role="tab" data-toggle="tab">2018</a></li>
+                                                    <li role="presentation" class="nav-item"><a href="#news-3"
+                                                            aria-controls="home" role="tab" data-toggle="tab">2017</a></li>
+                                                    <li role="presentation" class="nav-item"><a href="#news-4"
+                                                            aria-controls="home" role="tab" data-toggle="tab">2016</a></li>
+                                                    <li role="presentation" class="nav-item"><a href="#news-5"
+                                                            aria-controls="home" role="tab" data-toggle="tab">2015</a></li>
                                                 </ul>
-                                                <ul class="form-inline search-wrap ml-auto desktop-search"
-                                                    style="display:none">
+                                                <ul class="search-wrap desktop-search">
                                                     <li class="search-input">
                                                         <form class="search-form search-form-blog"
                                                             action="javascript:void(0)"><span
                                                                 class="fa fa-search search-icon"><img
                                                                     src="https://images.contentstack.io/v3/assets/blt1264fa9b448be721/blt7a9ad0286ac728fd/5cfaad4ca226ce6e30bf9995/download"
-                                                                    alt="search icon" /></span><input type="text"
-                                                                value="" class="form-control" placeholder=""
-                                                                id="searchfilter" /></form>
+                                                                    alt="search icon" /></span><input type="text" value=""
+                                                                id="searchfilter" class="form-control"
+                                                                placeholder="Search news" /></form>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -78,47 +82,43 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <div class="about-content">
-                            <div id="1" class="content-section section-row">
-                                <div class="container">
-                                    <div class="row">
-                                        <h2 class="">我们是谁?</h2>
-                                        <div class="abt">
-                                            <div class="col-md-5 image order-md-2"><img
-                                                    alt="contentstack-team-members.jpg"
-                                                    src="{{$uploadpath}}aboutusindex/{{$info.img}}" />
-                                            </div>
-                                            <div class="col-md-7 desc order-md-1">
-                                                <p>{{$info.whoarewe}}</p>
-                                            </div>
-                                        </div><a class="button apply-btn btn-lg ">现在申请</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="2" class="location-section section-row">
-                                <div class="container">
-                                    <h2>办公地点</h2>
-                                    <div class="row img-wrap">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="tab-content news-tab-content">
 
-                                        {{foreach from=$offerlist item=item  key=k}}
-                                        <div class="col-md-6 col-sm-12 img-col"><img alt="contentstack-us-office.jpg"
-                                                src="https://images.contentstack.io/v3/assets/blt77283b164776448a/blt7341ebab86306c2b/5d31a8914e692513fdb0efa8/contentstack-us-office.jpg" />
-                                            <div class="location">
-                                                <h3>United States</h3>
-                                                <div class="address">
-                                                    {{$item.summary}}
-                                                    </address>
+                                            {{foreach from=$list item=item  key=k}}
+
+                                            <div role="tabpanel" class="active tab-pane" id="news-1">
+                                                <div class="row">
+                                                    <div class="news-section">
+                                                        <div class="question-wrap">
+                                                            <div class="content-wrap">
+                                                                <h3 class="question"><a
+                                                                        href="https://machalliance.org/newsdetail/blta3fb06d35716ebb5"
+                                                                        target="_blank"></a>{{$item.title}}</h3>
+                                                                <p class="source">{{$item.date}}
+                                                                    <!-- -->, <span>{{$item.laiyuan}}</span></p>
+                                                                <div class="description">
+                                                                    <p>{{$item.content}}</p> <a
+                                                                        href="https://machalliance.org/newsdetail/blta3fb06d35716ebb5"
+                                                                        target="_blank">阅读更多</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                           
+                                            {{/foreach}}
+
                                         </div>
-                                        {{/foreach}}
-                                        
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                </div>
+                        </section>
+                       
+                    </div>
 
                     {{include file="$smarty_root/footer.html"}}
                 </div>
@@ -126,5 +126,4 @@
         </div>
     </div>
 </body>
-
 </html>

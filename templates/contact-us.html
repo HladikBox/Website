@@ -1,0 +1,36 @@
+{{include file="$smarty_root/header.html"}}
+
+<body>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <div class="main-wrapper">
+                <div>
+                    {{include file="$smarty_root/nav.html"}}
+
+                    <div class="about-page-section">
+                        <section class="hero-banner-section hero-banner-common">
+                            <div class="bg-image"
+                                style="background-image:url({{$uploadpath}}lianxiwomen/{{$info.bg}})">
+                            </div>
+                            <div class="banner-details">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="banner-content">
+                                                <h1>{{$info.title}}</h1>
+                                                <p>{{$info.summary}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div> 
+                    {{include file="$smarty_root/footer.html"}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
